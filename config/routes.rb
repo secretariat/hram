@@ -1,6 +1,10 @@
 Hram::Application.routes.draw do
-  get "page/index"
-  root :to => 'page#index'
+
+  # get "page/index"
+  # root :to => 'page#index'
+
+  # Inject refinery cms
+  mount Refinery::Core::Engine, :at => '/'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

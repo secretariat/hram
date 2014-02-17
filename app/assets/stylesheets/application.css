@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
  */
+
+@import "all.css";
+@import "brown.css";
+@import "calendar.css";
+@import "default.css";
+@import "javascri.css";
+@import "megamenu.css";
+@import "player.css";
+@import "prettyPhoto.css";
+@import "responsive.css";
+@import "shortcode.css";
+
+#page_container {
+    display: table;
+    height: 100%;
+    width: 100%;
+}

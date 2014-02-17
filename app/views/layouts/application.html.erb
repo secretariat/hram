@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Hram</title>
-  <meta charset="utf-8">
-  <meta name="description" content>
-	<meta name="author" content>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-  <script type="text/javascript">
-		function changeStyle(url) {
-			document.getElementById('stylesheet').href ='css/'+url;
-		}
-	</script>
-</head>
+<%= render '/refinery/html_tag' %>
+<% site_bar = render('/refinery/site_bar', :head => true) -%>
+<%= render '/refinery/head' %>
 <body>
-
-<%= yield %>
-
+<%= site_bar -%>
+<%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+<div id="page_container">
+  <div class="head-banner">
+    <header id="header">
+      <%= render 'shared/header' -%>
+    </header>
+    <%= render 'shared/slideshow' %>
+  </div>
+  <section id="page">
+    <%= yield %>
+  </section>
+  <footer class="footer">
+    <%= render 'shared/footer' -%>
+  </footer>
+</div>
+<%= render '/refinery/javascripts' %>
 </body>
 </html>
