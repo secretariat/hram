@@ -145,7 +145,7 @@
 	color: #e9d999;
 }
 span.ui-state-default {
-	background:#none;
+	/*background: #none;*/
 }
 span.ui-state-default:hover {
 }
