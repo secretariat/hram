@@ -1,10 +1,12 @@
 <header id="header">
   <div class="header-wrapper home">
     <div class="header-holder">
-      <h1 id="logo"><a href="index.html">Храм святих Косьми та Даміана</a></h1>
+      <h1 id="logo">
+        <%= link_to "Храм святих Косьми та Даміана", root_path %>
+      </h1>
       <div class="nav">
         <ul class="menu menu_blue">
-          <li class="active"><%= link_to "Головна", "#" %></li>
+          <li class="active"><%= link_to "Головна", root_path %></li>
           <li class="fullwidth"><a href="about.html" class="drop">Про церкву</a>
             <div class="dropdown_fullwidth first_fullwidth">
               <div class="col_2 firstcolumn">
@@ -20,12 +22,12 @@
                 </div>
               </div>
               <div class="col_2">
-                <h2>About Us</h2>
+                <h2>Про Храм</h2>
                 <div class="col_1 firstcolumn">
                   <ul>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="timeline.html">Timeline</a></li>
-                    <li><a href="sermons.html">Sermons</a></li>
+                    <li><a href="team.html">Коллектив</a></li>
+                    <li><a href="timeline.html">Розклад</a></li>
+                    <li><a href="sermons.html">Богослужіння</a></li>
                   </ul>
                 </div>
               </div>
@@ -82,27 +84,26 @@
               </div>
             </div>
           </li>
-          <li class="fullwidth"><a href="gallery.html" class="drop">Галерея</a>
+          <li class="fullwidth">
+            <%= link_to "Галерея", pages_gallery_path, :class => "drop" %>
             <div class="dropdown_fullwidth first_fullwidth">
               <div class="col_2 firstcolumn">
                 <div class="inner-col">
                   <%= image_tag "ch-28.jpg", :alt => "" %>
                   <%= image_tag "ch-29.jpg", :alt => "" %>
                   <%= image_tag "ch-30.jpg", :alt => "" %>
-                  <%= image_tag "ch-31.jpg", :alt => "" %>
-                  <%= image_tag "ch-32.jpg", :alt => "" %>
-                  <%= image_tag "ch-33.jpg", :alt => "" %>
-                  <%= image_tag "ch-34.jpg", :alt => "" %>
-                  <%= image_tag "ch-35.jpg", :alt => "" %>
+                  <%= image_tag "ch-28.jpg", :alt => "" %>
+                  <%= image_tag "ch-29.jpg", :alt => "" %>
+                  <%= image_tag "ch-30.jpg", :alt => "" %>
                 </div>
               </div>
               <div class="col_2">
-                <h2>Gallery</h2>
+                <h2>Галерея</h2>
                 <div class="col_1 firstcolumn">
                   <ul class="plus">
-                    <li><a href="gallery-singlepost.html">Gallery Column 1</a></li>
-                    <li><a href="gallery-2.html"> Gallery Column 2</a></li>
-                    <li><a href="gallery-3.html"> Gallery Column 3</a></li>
+                    <li><a href="#">Богослужіння</a></li>
+                    <li><a href="#"> Події</a></li>
+                    <li><a href="#"> Паломництва</a></li>
                   </ul>
                 </div>
               </div>

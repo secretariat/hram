@@ -1,0 +1,91 @@
+<div class="content">
+  <div class="heading-holder">
+    <h3 class="content-heading"><span><em class="h-left"></em><span class="inner-heading">Фотогалерея</span><em class="h-right"></em></span>
+    </h3>
+  </div>
+    <section class="grid-holder">
+      <section class="grid">
+        <article class="column c-four-fifth">
+          <div class="f-holder"><strong class="g-heading g-1-heading">Фільтр</strong>
+            <ul class="filter g2 group" id="catagory-item-filter">
+              <li><a href="#" data-value="All">Всі</a></li>
+              <li><a href="#" data-value="Landscape">Різдво</a></li>
+              <li><a href="#" data-value="Black">Пасха</a></li>
+              <li><a href="#" data-value="Portrait">Паломництва</a></li>
+              <li><a href="#" data-value="Typography">Свята</a></li>
+              <li><a href="#" data-value="Animals">Різне</a></li>
+            </ul>
+          </div>
+        </article>
+        <article class="column c-four-fifth">
+          <section class="grid-holder">
+            <section class="grid lightbox gallery" id="catagory-item-holder">
+              <figure class="column c-one-third Landscape catagory-item">
+                <div class="item alpha gallery-item">
+                  <div class="caption gallery-box"> <a href="images/gallery-img-1.jpg" rel="prettyPhoto[gallery1]"> <img src="images/gallery-img-1.jpg" alt="" class="pic"></a></div>
+                  <strong class="gallery-titel"><a href="gallery-singlepost.html">Будівництво</a></strong>
+                  <p>Процес будівництва Храму святих Косьми та Даміана</p>
+                </div>
+              </figure>
+              <figure class="column c-one-third  Landscape catagory-item">
+                <div class="item alpha gallery-item">
+                  <div class="caption gallery-box"> <a href="images/gallery-img-2.jpg" rel="prettyPhoto[gallery1]"> <img src="images/gallery-img-2.jpg" alt="" class="pic"></a></div>
+                  <strong class="gallery-titel"><a href="gallery-singlepost.html">Faith</a></strong>
+                  <p>Sit amet, consectetur adipiscing </p>
+                  <strong></strong> </div>
+              </figure>
+<!--               <figure class="column c-one-third  Black catagory-item">
+                <div class="item alpha gallery-item">
+                  <div class="caption gallery-box"> <a href="images/gallery-img-3.jpg" rel="prettyPhoto[gallery1]"> <img src="images/gallery-img-3.jpg" alt="" class="pic"></a></div>
+                 <strong class="gallery-titel"><a href="gallery-singlepost.html">Priests</a></strong>
+                  <p>Sit amet, consectetur adipiscing </p>
+                </div>
+              </figure> -->
+<!--               <figure class="column c-one-third  Portrait catagory-item">
+                <div class="item alpha gallery-item">
+                  <div class="caption gallery-box"> <a href="images/gallery-img-4.jpg" rel="prettyPhoto[gallery1]"> <img src="images/gallery-img-4.jpg" alt="" class="pic"></a></div>
+                  <strong class="gallery-titel"><a href="gallery-singlepost.html">Prayers</a></strong>
+                  <p>Sit amet, consectetur adipiscing </p>
+                </div>
+              </figure>
+ -->
+ <!--               <figure class="column c-one-third  Portrait catagory-item">
+                <div class="item alpha gallery-item">
+                  <div class="caption gallery-box"> <a href="images/gallery-img-5.jpg" rel="prettyPhoto[gallery1]"> <img src="images/gallery-img-5.jpg" alt="" class="pic"></a></div>
+                  <strong class="gallery-titel"><a href="gallery-singlepost.html">True Words</a></strong>
+                  <p>Sit amet, consectetur adipiscing </p>
+                  <strong></strong> </div>
+              </figure>
+ -->              <figure class="column c-one-third  catagory-item">
+                <div class="item alpha gallery-item">
+                  <div class="caption gallery-box">
+                    <%= link_to "#", :rel => "prettyPhoto[gallery1]" do %>
+                      <!-- <a href="images/gallery-img-6.jpg" rel="prettyPhoto[gallery1]"> -->
+                      <%= image_tag "gallery-img-6.jpg", :class => "pic"%>
+                      <!-- <img src="images/gallery-img-6.jpg" alt="" class="pic"></a> -->
+                    <% end %>
+                  </div>
+
+                  <!-- hover effect -->
+
+                  <strong class="gallery-titel"><a href="gallery-singlepost.html">Hope</a></strong>
+                  <p>Sit amet, consectetur adipiscing </p>
+                </div>
+              </figure>
+            </section>
+          </section>
+          <br clear="all">
+          <ul class="pagination-list color">
+            <li><a href="#" class="prev">Попередня</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#" class="current">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" class="next">Наступна</a></li>
+          </ul>
+        </article>
+      </section>
+    </section>
+  </div>
+</div>
