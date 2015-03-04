@@ -1,0 +1,14 @@
+<%= form_for [:admin, @gallery_category], :validate => true do |f| %>
+  <div class="form-group">
+  	<h5>Категория:</h5>
+  	<%= f.text_field :name, :class => "form-control  form-control--contact", :placeholder => "Категория"  %>
+  </div>
+
+  <div class="form-group">
+  	<%= f.check_box :active, :class=>"checkbox-inline", :style=>"margin-bottom:5px"%> Активирована 
+  </div>
+  <div class="row center">
+    <%= link_to "Отменить", admin_gallery_categories_path, :class => "readmorebtn small black" %>
+    <%= f.submit "Сохранить", :class => "readmorebtn small black"  %>
+  </div>
+<% end %>

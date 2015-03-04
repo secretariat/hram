@@ -1,3 +1,3 @@
 # -*- encoding : utf-8 -*-
-module AdminHelper
+module Admin::PagesHelper
 end

@@ -1,1 +1,29 @@
-Категорії фотоальбомів
+<div class="content">
+  <div class="heading-holder">
+    <h3 class="content-heading"><span><em class="h-left"></em><span class="inner-heading">Категорії</span><em class="h-right"></em></span>
+    </h3>
+		<%= link_to "Створити категорію", new_admin_gallery_category_path, :class => "readmorebtn small gray" %>
+  </div>
+  <section class="grid-holder">
+    <section class="grid">
+      <article class="column c-four-fifth">
+				<table>
+					<tbody>
+						<tr>
+							<th>№</th>
+							<th>Назва</th>
+							<th>Активна</th>
+						</tr>
+					</tbody>
+					<% @gallery_categories.each do |gc| %>
+					<tr>
+						<td><%= gc.id %></td>
+						<td><%= gc.name %></td>
+						<td><%= bool2str(gc.active) %></td>
+					</tr>
+					<% end %>
+				</table>
+			</article>
+		</section>
+	</section>
+</div>
