@@ -847,7 +847,7 @@ a.skUrl {
 
 .dark .skBackwards, .dark .skForwards, .dark .skOpener, .dark .skCloser, .dark .skDownload, .dark .skFacebook, .dark .skTwitter, .dark .skLoop, .dark .skLoud, .dark .skMute, .dark .skPlay, .dark .skPause, .dark .scrollbar-handle-up, .dark .scrollbar-handle-down {
 
-	background-image: url('../img/dark\/sk-dark.png');
+	background-image: url(/assets/sk-dark.png);
 
 }
 

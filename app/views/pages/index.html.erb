@@ -1,3 +1,8 @@
+<% title "Головна" %>
+<% meta_k "Храм святих Косьми та Даміана Римських, збір коштів на будівництво" %>
+<% meta_d "Храм святих Косьми та Даміана Римських, Димер, будівництво храму, пожертви, благодійність" %>
+
+
 <div class="wrapper">
   <!-- header -->
   <div class="main">
@@ -15,7 +20,7 @@
         <section class="grid">
           <div class="heading-holder">
             <h3 class="content-heading">
-              <span><em class="h-left"></em><span class="inner-heading">OUR services</span><em class="h-right"></em>  </span>
+              <span><em class="h-left"></em><span class="inner-heading">Вітаємо на офіційному сайті Храму</span><em class="h-right"></em>  </span>
             </h3>
           </div>
           <article class="column c-one-fourth service-box">
@@ -103,16 +108,15 @@
       <div class="buy-now">
         <section class="grid-holder">
           <section class="grid">
-            <article class="column c-one-half logo-holder">
-              <h2 class="c-logo"><a href="index.html">the church</a></h2>
+            <article class="column c-one-half">
             </article>
-            <article class="column c-one-half"> <span class="c-theme">an extra ordinary and original
-              theme for a perfect church.</span> <a href="#" class="buy">buy now</a> </article>
+            <article class="column c-one-half">
+            </article>
           </section>
         </section>
       </div>
       <div class="heading-holder">
-        <h3 class="content-heading"><span><em class="h-left"></em><span class="inner-heading">EVENTS SCHEDULE</span><em class="h-right"></em></span></h3>
+        <h3 class="content-heading"><span><em class="h-left"></em><span class="inner-heading">Розклад подій</span><em class="h-right"></em></span></h3>
       </div>
       <article class="events calender-box">
         <div class="calender">
@@ -126,23 +130,7 @@
                 <div class="left"><span class="info-heading">1- Jesus : an eye into the soul !</span>
                   <p>Lets create some dummy content here which goes for your outstanding event details. Lorem ipsum dolor sit amet, consectetur...</p>
                 </div>
-                <a href="event-detail.html" class="btn-a">Event Details</a> </div>
-            </li>
-            <li>
-              <%= image_tag "calender3.jpg", :alt => "" %>
-              <div class="info-1">
-                <div class="left"><span class="info-heading">2- Jesus : an eye into the soul !</span>
-                  <p>Lets create some dummy content here which goes for your outstanding event details. Lorem ipsum dolor sit amet, consectetur...</p>
-                </div>
-                <a href="event-detail.html" class="btn-a">Event Details</a> </div>
-            </li>
-            <li>
-              <%= image_tag "img-5.jpg", :alt => "" %>
-              <div class="info-1">
-                <div class="left"><span class="info-heading">3- Jesus : an eye into the soul !</span>
-                  <p>Lets create some dummy content here which goes for your outstanding event details. Lorem ipsum dolor sit amet, consectetur...</p>
-                </div>
-                <a href="event-detail.html" class="btn-a">Event Details</a> </div>
+                <a href="event-detail.html" class="btn-a">Детально</a> </div>
             </li>
           </ul>
         </div>
@@ -153,16 +141,15 @@
           <article class="column c-one-third">
             <div class="post">
               <h4>Про Храм</h4>
-              <p>Sed ut perspiciatis unde omnis iste natsit voluptatem accusantium doloremque
-                laudantium, totam rem. Sed ut perspiciatis unde omnis iste natus error accusantium doloremque rem.</p>
-              <div class="read-more"><a href="church-event.html">Read More</a></div>
+              <p>Ми знаходимось від Києва на відстані 30км. Автомобілем до нас їхати з Києва, площі Шевченка 25хв., на рейсовому автобусі 45хв. у Іванковському напрямку. Назва маршутного - таксі Київ – Димер відправляється, що 20хв. з автостанції «Полісся». </p>
+              <div class="read-more"><a href="church-event.html">Детальніше</a></div>
             </div>
           </article>
           <article class="column c-one-third">
             <div class="post">
               <ul class="post-slide" id="s1">
                 <li>
-                  <h4>BLOG POST</h4>
+                  <h4>Цікаві статті</h4>
                   <strong class="top-line">Some Longer Blog Post Title Goes Here</strong>
                   <p>Lorem ipsum dolor sit amet, consec tetuer adipiscing elit, sed diam nonummy aliquam erat volutpat.</p>
                   <span class="tech-text">Posted by St. Patrick in <em>Teachings</em></span></li>
@@ -176,9 +163,18 @@
           </article>
           <article class="column c-one-third">
             <div class="post">
-              <h4>Пожертви на будівництво храму</h4>
-              <%= image_tag "rating-img.jpg", :alt => "rating" %>
-              <span class="rate">$ 6,456,731</span>
+              <center>
+                <h4>Пожертви на будівництво храму</h4>
+              </center>
+              <ul class="progress-bar">
+                <li>
+                  <div class="meter">
+                  <span style="width: 0px;"></span>
+                  </div>
+                </li>
+              </ul>
+              <%#= image_tag "rating-img.jpg", :alt => "rating" %>
+              <span class="rate"> 0 грн.</span>
               <span class="target"></span>
               <!-- <span class="target">away from target</span> -->
               <div class="read-more generous"><a href="#">Будьте щедрими</a><span>&nbsp;</span></div>
